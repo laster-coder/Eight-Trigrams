@@ -1,103 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-           box-sizing: border-box;
-        }
-        #八卦-描述{
-            background-color: #eeee;
-        }
-        @keyframes x {
-            from{
-                transform: rotate(180deg);
-            }
-            to{
-                transform: rotate(360deg);
-            }
-        }
-        #八卦{
-           width: 400px;
-           height: 400px;
-           border-radius: 50%;
-           position: relative;
-           overflow: hidden;
-           animation: x 10S linear infinite;
-        }
-        
-        #八卦>div:nth-child(1){
-            width:50%;
-            height:100%;
-            background-color: black;
-            left: 0;
-            position: absolute;
-        }
-        #八卦>div:nth-child(2){
-            width:50%;
-            height:100%;
-            background-color: white;
-            right: 0;
-            position: absolute;
-        }
-        #八卦>div:nth-child(3){
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            background-color:black;
-            position:absolute;
-            
-            left:50%;
-            margin-left:-100px;
-            
-        }
-        #八卦>div:nth-child(4){
-            width:200px;
-            height:200px;
-            border-radius: 50%;
-            background-color: white;
-            position: absolute;
-            
-            bottom: 0;
-            right: 25%;
-        }
-        #八卦>div:nth-child(5){
-            width:50px;
-            height:50px;
-            border-radius: 50%;
-            background-color:white;
-            position: absolute;
-            
-            left:50%;
-            margin-left: -25px;
-            top:70px;
-        }
-        #八卦>div:nth-child(6){
-            width:50px;
-            height:50px;
-            border-radius: 50%;
-            position:absolute;
-            background-color: black;
-            bottom: 70px;
-            left:50%;
-            margin-left: -25px;
-        }
-    </style>
-</head>
-<body>
-    <div id="八卦-描述">
-    <div id="八卦">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <h1>道可道非常道</h1>
-</div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />       
+	</head>
+	<body>
+		<div id="八卦-wrapper">
+			<div id="八卦">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="八卦-描述">道可道非常道</div>
+		</div>
+	</body>
+    <script src="main.js"></script>
 </html>
